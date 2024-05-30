@@ -18,5 +18,6 @@ app.use(notFound);
 app.use(handleError);
 
 app.listen(port, () => {
+  console.log('Hello Node...');
   console.log(`server running on port ${port}`);
 });
