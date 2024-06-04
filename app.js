@@ -2,7 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import { notFound } from "./src/middlewares/notFound.js";
 import { handleError } from "./src/middlewares/handleError.js";
-import transactionsRoute from "./src/resources/transactions/transactions.routes.js";
+import notesRoute from "./src/resources/notes/notes.routes.js";
 dotenv.config();
 
 const app = express();
@@ -12,7 +12,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 
 // api routes
-app.use("/transactions", transactionsRoute);
+app.use("/notes", notesRoute);
 
 app.use(notFound);
 app.use(handleError);
