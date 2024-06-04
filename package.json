@@ -1,8 +1,8 @@
 {
-  "name": "note-crud",
+  "name": "transactions-crud",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

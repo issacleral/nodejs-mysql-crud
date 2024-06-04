@@ -14,8 +14,6 @@ app.use(express.json());
 // api routes
 app.use("/transactions", transactionsRoute);
 
-app.use("/transactions", transactionsRoute);
-
 app.use(notFound);
 app.use(handleError);
 
